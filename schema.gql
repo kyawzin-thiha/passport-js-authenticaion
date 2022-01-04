@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  addNewUser(displayName: String!, password: String!, userName: String!): Boolean!
+  updateUserPassword(password: String!): Boolean!
+}
+
+type Query {
+  getUserInfo: UserModel!
+  isAuthenticated: Boolean!
+}
+
+"""This is mode for user schema"""
+type UserModel {
+  _id: ID!
+  displayName: String!
+  userID: ID!
+}
